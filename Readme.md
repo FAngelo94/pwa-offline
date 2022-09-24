@@ -1,3 +1,3 @@
 # Progressive Web App
 
-Ba
+Example of simple PWA
