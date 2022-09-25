@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Card({img, title, text}) {
+export function Card({img, title, text}) {
 
     return (
         <div className="card">
@@ -12,5 +12,3 @@ function Card({img, title, text}) {
         </div>
     );
 }
-
-export default Card;

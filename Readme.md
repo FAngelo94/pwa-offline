@@ -1,3 +1,3 @@
-# Progressive Web App
+# DigitalPix
 
-Example of simple PWA
+Prototype of DigitalPix

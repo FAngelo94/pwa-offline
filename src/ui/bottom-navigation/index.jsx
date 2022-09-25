@@ -1,12 +1,10 @@
 import React from 'react';
 
-function BottomNavigation() {
+export function BottomNavigation({children}) {
 
     return (
-        <div>
-            <h1>BottomNavigation</h1>
+        <div className='nav w-100 justify-content-around position-absolute bottom-0 border-top'>
+            {children}
         </div>
     );
 }
-
-export default BottomNavigation;

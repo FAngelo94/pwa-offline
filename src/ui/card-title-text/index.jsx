@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CardTitleText({title, text}) {
+export function CardTitleText({title, text}) {
 
     return (
         <div className="card">
@@ -11,5 +11,3 @@ function CardTitleText({title, text}) {
         </div>
     );
 }
-
-export default CardTitleText;

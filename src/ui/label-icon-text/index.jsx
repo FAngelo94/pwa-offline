@@ -1,6 +1,6 @@
 import React from 'react';
 
-function LabelIconText({icon, text}) {
+export function LabelIconText({icon, text}) {
 
     return (
         <div className="card">
@@ -9,5 +9,3 @@ function LabelIconText({icon, text}) {
         </div>
     );
 }
-
-export default LabelIconText;

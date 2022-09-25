@@ -1,11 +1,11 @@
 import React from 'react';
 import {Page} from '../../components';
 
-export function Explore() {
+export function Cart() {
 
     return (
         <Page>
-            <h1>Explore</h1>
+            <h1>Cart</h1>
         </Page>
     );
 }

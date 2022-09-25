@@ -1,12 +1,14 @@
 import React from 'react';
+import {BottomNavigation} from '..';
 
-function Page() {
+export function Page({children}) {
 
     return (
-        <div>
-            <h1>Page</h1>
+        <div className='vw-100 vh-100 position-relative'>
+            <div>
+                {children}
+            </div>
+            <BottomNavigation />
         </div>
     );
 }
-
-export default Page;

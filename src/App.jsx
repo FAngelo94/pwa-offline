@@ -7,12 +7,16 @@ import {
   Route
 } from "react-router-dom";
 
+import {Home, Profile, Explore, Cart} from './pages';
+
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<div>Home</div>} />
-        <Route path="/page" element={<div>Page</div>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </Router>
   );
