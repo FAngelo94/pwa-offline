@@ -3,9 +3,9 @@ import React from 'react';
 export function LabelIconText({icon, text}) {
 
     return (
-        <div className="card">
+        <div>
             {icon}
-            {text}
+            <span className='ms-2'>{text}</span>
         </div>
     );
 }

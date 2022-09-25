@@ -5,7 +5,7 @@ export function Page({children}) {
 
     return (
         <div className='vw-100 vh-100 position-relative'>
-            <div>
+            <div className='p-3 d-grid gap-3'>
                 {children}
             </div>
             <BottomNavigation />
