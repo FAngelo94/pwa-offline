@@ -2,7 +2,7 @@ import React from 'react';
 import { Page } from '../../components';
 import { Card, LabelIconText, CardTitleText } from '../../ui';
 
-const cardsList1 = [
+const HomeCardList1 = [
     {
         title: 'Stampe Classiche',
         image: 'https://via.placeholder.com/300x180?text=Placeholder',
@@ -16,7 +16,7 @@ const cardsList1 = [
     }
 ]
 
-const cardsList2 = [
+const HomeCardList2 = [
     {
         title: 'Foto su Forex',
         image: 'https://via.placeholder.com/300x180?text=Placeholder',
@@ -34,45 +34,46 @@ export function Home() {
 
     return (
         <Page>
-            <LabelIconText
-                icon={<span className='p-1 bg-secondary'></span>}
-                text="Promozioni" />
-            <CardTitleText
-                title={
-                    <LabelIconText
-                        icon={<span className='p-1 bg-secondary'></span>}
-                        text="Ti diamo il benvenuto" />}
-                text="Questa è la nostra nuova webapp ottimizzata per i dispositivi mobili"
-                otherClass="bg-primary text-white mt-3" />
+            <div className='p-3'>
+                <LabelIconText
+                    icon={<span className='p-1 bg-secondary'></span>}
+                    text="Promozioni" />
+                <CardTitleText
+                    title={
+                        <LabelIconText
+                            icon={<span className='p-1 bg-secondary'></span>}
+                            text="Ti diamo il benvenuto" />}
+                    text="Questa è la nostra nuova webapp ottimizzata per i dispositivi mobili"
+                    otherClass="bg-primary text-white mt-3" />
 
-            <LabelIconText
-                icon={<span className='p-1 bg-secondary'></span>}
-                text="Prodotti di tendenza" 
-                otherClass={'mt-4'}/>
-                {cardsList1.map((card, index) => (
-                   <Card 
-                        key={index} 
+                <LabelIconText
+                    icon={<span className='p-1 bg-secondary'></span>}
+                    text="Prodotti di tendenza"
+                    otherClass={'mt-4'} />
+                {HomeCardList1.map((card, index) => (
+                    <Card
+                        key={index}
                         title={card.title}
                         image={card.image}
                         price={card.price}
-                        oldPrice={card.oldPrice} 
-                        otherClass="mb-4"/>
+                        oldPrice={card.oldPrice}
+                        otherClass="mb-4" />
                 ))}
 
-            <LabelIconText
-                icon={<span className='p-1 bg-secondary'></span>}
-                text="Prodotti consigliati"
-                otherClass={'mt-4'}/>
-                {cardsList2.map((card, index) => (
-                   <Card 
-                        key={index} 
+                <LabelIconText
+                    icon={<span className='p-1 bg-secondary'></span>}
+                    text="Prodotti consigliati"
+                    otherClass={'mt-4'} />
+                {HomeCardList2.map((card, index) => (
+                    <Card
+                        key={index}
                         title={card.title}
                         image={card.image}
                         price={card.price}
-                        oldPrice={card.oldPrice} 
-                        otherClass="mb-4"/>
+                        oldPrice={card.oldPrice}
+                        otherClass="mb-4" />
                 ))}
-
+            </div>
         </Page>
     );
 }
