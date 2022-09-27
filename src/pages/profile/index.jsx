@@ -17,11 +17,11 @@ export function Profile() {
             </ImageOverlay>
             <div className='p-3'>
                 <div className='fw-bold'>Informazioni</div>
-                <ul class="list-group list-group-flush" id="accordionExample">
-                    <li class="list-group-item">Spese di spedizione</li>
-                    <li class="list-group-item">Privacy Policy</li>
-                    <li class="list-group-item">Assistenza</li>
-                    <li class="list-group-item text-center">Digitalpix v.0.2.7</li>
+                <ul className="list-group list-group-flush" id="accordionExample">
+                    <li className="list-group-item">Spese di spedizione</li>
+                    <li className="list-group-item">Privacy Policy</li>
+                    <li className="list-group-item">Assistenza</li>
+                    <li className="list-group-item text-center">Digitalpix v.0.2.7</li>
                 </ul>
             </div>
         </Page>
