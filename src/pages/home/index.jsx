@@ -5,11 +5,13 @@ import { Card, LabelIconText, CardTitleText } from '../../ui';
 const HomeCardList1 = [
     {
         title: 'Stampe Classiche',
+        id: "classicPrint",
         image: 'https://via.placeholder.com/300x180?text=Placeholder',
         price: '0,11 €',
     },
     {
         title: 'Foto su Tela',
+        id: "picturesPaintings",
         image: 'https://via.placeholder.com/300x180?text=Placeholder',
         price: '4,90 €',
         oldPrice: '17,90 €'
@@ -19,16 +21,23 @@ const HomeCardList1 = [
 const HomeCardList2 = [
     {
         title: 'Foto su Forex',
+        id: "photoOnForex",
         image: 'https://via.placeholder.com/300x180?text=Placeholder',
         price: '4,90 €',
         oldPrice: '5,50 €'
     },
     {
         title: 'Foto con Cornice',
+        id: "photoWithFrame",
         image: 'https://via.placeholder.com/300x180?text=Placeholder',
         price: '14,90 €',
     }
 ]
+
+const handleCardClick = (id) => {
+    window.location.href = `/details/${id}`;
+}
+
 
 export function Home() {
 
@@ -51,13 +60,15 @@ export function Home() {
                     text="Prodotti di tendenza"
                     otherClass={'mt-4 mb-3'} />
                 {HomeCardList1.map((card, index) => (
-                    <Card
-                        key={index}
-                        title={card.title}
-                        image={card.image}
-                        price={card.price}
-                        oldPrice={card.oldPrice}
-                        otherClass="mb-4" />
+                    <div onClick={() => handleCardClick(card.id)} key={index} className='mb-4'>
+                        <Card
+                            key={index}
+                            title={card.title}
+                            image={card.image}
+                            price={card.price}
+                            oldPrice={card.oldPrice}
+                        />
+                    </div>
                 ))}
 
                 <LabelIconText
@@ -65,13 +76,15 @@ export function Home() {
                     text="Prodotti consigliati"
                     otherClass={'mt-4 mb-3'} />
                 {HomeCardList2.map((card, index) => (
-                    <Card
-                        key={index}
-                        title={card.title}
-                        image={card.image}
-                        price={card.price}
-                        oldPrice={card.oldPrice}
-                        otherClass="mb-4" />
+                    <div onClick={() => handleCardClick(card.id)} key={index} className='mb-4'>
+                        <Card
+                            key={index}
+                            title={card.title}
+                            image={card.image}
+                            price={card.price}
+                            oldPrice={card.oldPrice}
+                        />
+                    </div>
                 ))}
             </div>
         </Page>

@@ -6,4 +6,5 @@ export * from './carousel';
 export * from './icons';
 export * from './image-overlay';
 export * from './label-icon-text';
+export * from './list';
 export * from './top-navigation';
