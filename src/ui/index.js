@@ -5,3 +5,4 @@ export * from './card-title-text';
 export * from './icons';
 export * from './image-overlay';
 export * from './label-icon-text';
+export * from './top-navigation';

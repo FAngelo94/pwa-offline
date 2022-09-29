@@ -49,7 +49,7 @@ export function Home() {
                 <LabelIconText
                     icon={<span className='p-1 bg-secondary'></span>}
                     text="Prodotti di tendenza"
-                    otherClass={'mt-4'} />
+                    otherClass={'mt-4 mb-3'} />
                 {HomeCardList1.map((card, index) => (
                     <Card
                         key={index}
@@ -63,7 +63,7 @@ export function Home() {
                 <LabelIconText
                     icon={<span className='p-1 bg-secondary'></span>}
                     text="Prodotti consigliati"
-                    otherClass={'mt-4'} />
+                    otherClass={'mt-4 mb-3'} />
                 {HomeCardList2.map((card, index) => (
                     <Card
                         key={index}

@@ -6,6 +6,7 @@ const sectionId = window.location.pathname.split('/')[2];
 
 const SectionCardList = {
     printPhoto: {
+        title: 'Stampa Foto',
         headerText: 'Dai vita ai tuoi ricordi più cari con le stampe fotografiche. Carica le tue foto e trasformale in bellissime stampre da conservare e toccare con mano: è facile con Digitalpix!',
         cards:
             [
@@ -54,7 +55,7 @@ const handleCardClick = (id) => {
 export function Section() {
 
     return (
-        <Page>
+        <Page visibleBottomNavigation={false} title={SectionCardList[sectionId].title}>
             <div className='p-3'>
                 <p className='text-center text-secondary pb-4 border-bottom'>{SectionCardList[sectionId].headerText}</p>
                 <div className='pt-3'>
