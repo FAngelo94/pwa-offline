@@ -55,7 +55,7 @@ const ExploreCardList = [
 ];
 
 const handleCardClick = (id) => {
-    window.location.href = `/section/${id}`;
+    window.location.href = `/section?id=${id}`;
 }
 
 export function Explore() {

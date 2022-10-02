@@ -49,7 +49,7 @@ const SectionCardList = {
 };
 
 const handleCardClick = (id) => {
-    window.location.href = `/details/${id}`;
+    window.location.href = `/details&id=${id}`;
 }
 
 export function Section() {
