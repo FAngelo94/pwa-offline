@@ -1,9 +1,13 @@
 import React from 'react';
 import { Page } from '../../components';
 import { Carousel } from '../../ui';
+import { BottomButton } from '../../components/bottom-button';
+
+const urlParams = new URLSearchParams(window.location.search);
+const detailsId = urlParams.get('id');
 
 const ExploreCardList = {
-    printPhoto: {
+    classicPrint: {
         title: 'Stampa Foto',
         price: '0,11 €',
         oldPrice: "",
@@ -21,17 +25,29 @@ const ExploreCardList = {
     },
 }
 
+const handleButtonClick = () => {
+    window.location.href = `/product?id=${detailsId}`;
+}
+
+const handleBackPage = () => {
+    window.history.back();
+}
+
 export function Details() {
 
     return (
-        <Page visibleBottomNavigation={false}>
-            <Carousel images={ExploreCardList.printPhoto.images} />
+        <Page
+            customBottomSection={<BottomButton content="Crea Ora" onClick={handleButtonClick} />}>
+            <div className='position-relative'>
+                <Carousel images={ExploreCardList[detailsId].images} />
+                <span className='position-absolute p-2 bg-black top-0 start-0 ms-3 mt-3' onClick={handleBackPage}></span>
+            </div>
             <div className='p-3'>
-                <h1>{ExploreCardList.printPhoto.title}</h1>
-                {ExploreCardList.printPhoto.oldPrice ? <h2>{ExploreCardList.printPhoto.oldPrice}</h2> : null}
-                <h2>{ExploreCardList.printPhoto.price}</h2>
+                <h1>{ExploreCardList[detailsId].title}</h1>
+                {ExploreCardList[detailsId].oldPrice ? <h2>{ExploreCardList[detailsId].oldPrice}</h2> : null}
+                <h2>{ExploreCardList[detailsId].price}</h2>
 
-                <p>{ExploreCardList.printPhoto.text}</p>
+                <p>{ExploreCardList[detailsId].text}</p>
             </div>
         </Page>
     );

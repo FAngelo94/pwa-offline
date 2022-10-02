@@ -2,7 +2,8 @@ import React from 'react';
 import { Page } from '../../components';
 import { Card } from '../../ui';
 
-const sectionId = window.location.pathname.split('/')[2];
+const urlParams = new URLSearchParams(window.location.search);
+const sectionId = urlParams.get('id');
 
 const SectionCardList = {
     printPhoto: {
@@ -49,10 +50,11 @@ const SectionCardList = {
 };
 
 const handleCardClick = (id) => {
-    window.location.href = `/details&id=${id}`;
+    window.location.href = `/details?id=${id}`;
 }
 
 export function Section() {
+    console.log("SECTION ID: ", sectionId);
 
     return (
         <Page visibleBottomNavigation={false} title={SectionCardList[sectionId].title}>

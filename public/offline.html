@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Climberworld</title>
+
+    <!-- Inline the page's stylesheet. -->
+    <style>
+      body {
+        font-family: helvetica, arial, sans-serif;
+        margin: 2em;
+        text-align: center;
+        background: rgba(41, 173, 107, 0.3);
+      }
+
+      h1 {
+        font-style: italic;
+        color: rgb(16, 97, 56);
+      }
+
+      p {
+        margin-block: 1rem;
+      }
+
+      button {
+        display: block;
+        padding: 10px;
+        color: white;
+        background: rgb(41, 173, 107);
+        font-weight: bold;
+        border: 0px;
+        border-radius: 10px;
+        margin: auto;
+        cursor: pointer;
+        flex: 1 1 0%;
+      }
+
+      img {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>You are offline</h1>
+
+    <button type="button" onclick="reloadFunction()">Reload</button>
+
+    <!-- Inline the page's JavaScript file. -->
+    <script>
+      function reloadFunction() {
+        window.location.reload(true);
+      }
+    </script>
+  </body>
+</html>
