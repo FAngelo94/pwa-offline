@@ -1,4 +1,4 @@
-var CACHE_VERSION = 31;
+var CACHE_VERSION = 33;
 var CURRENT_CACHES = {
   font: 'font-cache-v' + CACHE_VERSION
 };
@@ -66,7 +66,7 @@ self.addEventListener('activate', function (event) {
 });
 
 const checkIfUrlIsInCache = (url) => {
-  if(url.includes("localhost") && url.includes("bundle")){
+  if(url.includes("bundle")){
     return true;
   }
   return false;
