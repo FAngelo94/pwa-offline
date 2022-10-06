@@ -1,4 +1,4 @@
-var CACHE_VERSION = 33;
+var CACHE_VERSION = 39;
 var CURRENT_CACHES = {
   font: 'font-cache-v' + CACHE_VERSION
 };
@@ -14,7 +14,7 @@ var CURRENT_CACHES = {
         <Route path="/productOption?id=" element={<ProductOption />} />
  */
 
-const urlsToCache = ['/','/offline.html', '/explore', '/profile', '/cart', '/section', '/details', '/product', '/productOption'];
+const urlsToCache = ['/','/offline.html', '/explore', '/profile', '/cart', '/section', '/details', '/product', '/productOption', '/details?id=classicPrint',  '/section?id=printPhoto','/product?id=classicPrint'];
 
 // Add url with query string with any parameter
 

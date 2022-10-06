@@ -51,7 +51,7 @@ export function Home() {
                     title={
                         <LabelIconText
                             icon={<span className='p-1 bg-secondary'></span>}
-                            text="Ti diamo il benvenuto" />}
+                            text="Ti diamo il benvenuto test" />}
                     text="Questa è la nostra nuova webapp ottimizzata per i dispositivi mobili"
                     otherClass="bg-primary text-white mt-3" />
 
@@ -87,6 +87,7 @@ export function Home() {
                     </div>
                 ))}
             </div>
+            <input type="file"  />
         </Page>
     );
 }
