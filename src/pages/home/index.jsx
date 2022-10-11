@@ -46,13 +46,13 @@ export function Home() {
             <div className='p-3'>
                 <LabelIconText
                     icon={<span className='p-1 bg-secondary'></span>}
-                    text="Promozioni" />
+                    text="Introduzione" />
                 <CardTitleText
                     title={
                         <LabelIconText
                             icon={<span className='p-1 bg-secondary'></span>}
-                            text="Ti diamo il benvenuto test" />}
-                    text="Questa è la nostra nuova webapp ottimizzata per i dispositivi mobili"
+                            text="PWA Offline App" />}
+                    text="Una PWA (Progressive Web App) è un'applicazione web che si comporta come un'applicazione nativa. Può essere installata sul dispositivo e funziona offline. Inoltre anche sul browser, una volta fatto atterrato nel sito, si può navigare tra le pagine anche senza connessione internet."
                     otherClass="bg-primary text-white mt-3" />
 
                 <LabelIconText

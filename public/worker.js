@@ -1,18 +1,7 @@
-var CACHE_VERSION = 40;
+var CACHE_VERSION = 43;
 var CURRENT_CACHES = {
   font: 'font-cache-v' + CACHE_VERSION
 };
-
-/*
-<Route path="/" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/explore" element={<Explore />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/section" element={<Section />} />
-        <Route path="/details" element={<Details />} />
-        <Route path="/product" element={<Product />} />
-        <Route path="/productOption?id=" element={<ProductOption />} />
- */
 
 const urlsToCache = ['/','/offline.html', '/explore', '/profile', '/cart', '/section', '/details', '/product', '/productOption', '/details?id=classicPrint',  '/section?id=printPhoto','/product?id=classicPrint'];
 
