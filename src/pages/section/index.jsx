@@ -3,12 +3,13 @@ import { Page } from '../../components';
 import { Card } from '../../ui';
 
 const urlParams = new URLSearchParams(window.location.search);
-const sectionId = urlParams.get('id');
+const sectionId = "printPhoto"
+const title = urlParams.get('id');
 
 const SectionCardList = {
     printPhoto: {
         title: 'Stampa Foto',
-        headerText: 'Dai vita ai tuoi ricordi più cari con le stampe fotografiche. Carica le tue foto e trasformale in bellissime stampre da conservare e toccare con mano: è facile con Digitalpix!',
+        headerText: '........',
         cards:
             [
                 {
@@ -57,7 +58,7 @@ export function Section() {
     console.log("SECTION ID: ", sectionId);
 
     return (
-        <Page visibleBottomNavigation={false} title={SectionCardList[sectionId].title}>
+        <Page visibleBottomNavigation={false} title={"Id of Section Page: " +title}>
             <div className='p-3'>
                 <p className='text-center text-secondary pb-4 border-bottom'>{SectionCardList[sectionId].headerText}</p>
                 <div className='pt-3'>

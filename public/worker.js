@@ -1,4 +1,4 @@
-var CACHE_VERSION = 39;
+var CACHE_VERSION = 40;
 var CURRENT_CACHES = {
   font: 'font-cache-v' + CACHE_VERSION
 };

@@ -87,7 +87,6 @@ export function Home() {
                     </div>
                 ))}
             </div>
-            <input type="file"  />
         </Page>
     );
 }
