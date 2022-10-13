@@ -5,8 +5,8 @@ Prototype of application that work offline
 ## Run application
 Run the following command to start the application
 ```bash
-- `npm install` - install dependencies
-- `npm run` - run the application
+npm install - install dependencies
+npm run - run the application
 ```
 
 ## Test app offline locally
