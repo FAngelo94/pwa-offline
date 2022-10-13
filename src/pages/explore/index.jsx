@@ -62,9 +62,9 @@ export function Explore() {
 
     return (
         <Page>
-            <div className='p-3'>
+            <div className='p-3 row'>
                 {ExploreCardList.map((card, index) => (
-                    <div onClick={() => handleCardClick(card.id)} key={index} className='mb-4'>
+                    <div onClick={() => handleCardClick(card.id)} key={index} className='mb-4 col-sm-5 col-md-4'>
                         <Card
                             title={card.title}
                             image={card.image}

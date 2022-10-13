@@ -59,24 +59,27 @@ export function Home() {
                     icon={<span className='p-1 bg-secondary'></span>}
                     text="Prodotti di tendenza"
                     otherClass={'mt-4 mb-3'} />
-                {HomeCardList1.map((card, index) => (
-                    <div onClick={() => handleCardClick(card.id)} key={index} className='mb-4'>
-                        <Card
-                            key={index}
-                            title={card.title}
-                            image={card.image}
-                            price={card.price}
-                            oldPrice={card.oldPrice}
-                        />
-                    </div>
-                ))}
+                <div className='row'>
+                    {HomeCardList1.map((card, index) => (
+                        <div onClick={() => handleCardClick(card.id)} key={index} className='mb-4 mb-sm-0 col-sm'>
+                            <Card
+                                key={index}
+                                title={card.title}
+                                image={card.image}
+                                price={card.price}
+                                oldPrice={card.oldPrice}
+                            />
+                        </div>
+                    ))}
+                </div>
 
                 <LabelIconText
                     icon={<span className='p-1 bg-secondary'></span>}
                     text="Prodotti consigliati"
                     otherClass={'mt-4 mb-3'} />
+                    <div className='row'>
                 {HomeCardList2.map((card, index) => (
-                    <div onClick={() => handleCardClick(card.id)} key={index} className='mb-4'>
+                    <div onClick={() => handleCardClick(card.id)} key={index} className='mb-4 mb-sm-0 col-sm'>
                         <Card
                             key={index}
                             title={card.title}
@@ -86,6 +89,7 @@ export function Home() {
                         />
                     </div>
                 ))}
+                </div>
             </div>
         </Page>
     );

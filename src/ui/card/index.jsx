@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Card({ image, title, price, oldPrice = null, otherClass }) {
+export function Card({ image, title, price, oldPrice = null, otherClass = "" }) {
 
     return (
         <div className={`card rounded-5 overflow-hidden shadow  ${otherClass}`}>
